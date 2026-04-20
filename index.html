@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portafolio Joshua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="head">
+        <h2 class="icono_header">JQ</h2>
+        <nav >            
+            <Ul class="menu_header">                
+                <li><a href="#portafolio">Proyectos</a></li>
+                <li><a href="#acerca_de_mi">Acerca de mi</a></li>
+                <li><a href="#contact">Contactame</a></li>
+                <li><a href="mascotas.html" target="_blank">Mascotas</a></li>
+            </Ul>            
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <h1>
+            <span class="texto_yo">Yo soy</span>
+            <span class="textogrande_main">Joshua</span>
+            <span class="texto_main">UI/UX Designer</span>
+            </h1>        
+            <h3 class="main_desc">construyo interfaces donde el codigo y el diseño se unen. Dos carreras, una vision</h3>
+            <div class="main_btns">
+                <button href="#portafolio" class="btn-white">mira mis proyectos</button>
+                <button href="#contact" class="btn-ghost">contactame</button>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section id="portafolio">
+            <span class="s-num">01 -</span>
+            <h2 class="s-title" >Mi portafolio</h2>
+            <h3 class="s-sub" >Hola, yo soy Joshua Quintero desarrolador full stack y diseñador</h3>            
+            <div class="tarjetas_container">
+                <article class="tarjetas_proyecto">                
+                    <div class="contenido_tarjeta">
+                        <div class="p-num">P — 001</div>
+                        <img  class="proyecto_img" src=".//img/python.png" alt="Python / CLI">                    
+                        <h3 class="t-titulo">SISTEMA DE INVENTARIO</h3>
+                        <p class="t-desc">Aplicación de consola en Python con arquitectura modular. Manejo de stock, registros en CSV/JSON y gestión de errores robusta.</p>
+                        <div class="p-tags">
+                            <span class="p-tag">Python</span>
+                            <span class="p-tag">CSV / JSON</span>
+                            <span class="p-tag">Módulos</span>
+                            <span class="p-tag">CLI</span>
+                        </div>
+                        <a href="https://github.com/JoshuaQ-rJ" target="_blank" class="view-project">View Project →</a>
+                    </div>
+                </article>
+                <article class="tarjetas_proyecto">                
+                    <div class="contenido_tarjeta">
+                        <div class="p-num">P — 002</div>
+                        <img  class="proyecto_img" src=".//img/estudiantes.jpg" alt="Python / CLI">                    
+                        <h3 class="t-titulo">Sistemas de gestión de estudiantes</h3>
+                        <p class="t-desc">Sistema de gestión de estudiantes por línea de comandos desarrollado en Python. Permite a los usuarios crear, consultar, buscar, guardar y actualizar la información de los estudiantes mediante un archivo CSV para su almacenamiento persistente.</p>
+                        <div class="p-tags">
+                            <span class="p-tag">Python</span>
+                            <span class="p-tag">CSV / JSON</span>
+                            <span class="p-tag">Módulos</span>
+                        </div>
+                        <a href="https://github.com/JoshuaQ-rJ" target="_blank" class="view-project">View Project →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+
+        <div class="divider"></div>
+        
+        <section id="acerca_de_mi">
+            <div class="about">
+                <span class="s-num">02 —</span>
+                <h2 class="acercadmi">ACERCA<br><span>DE MI</span></h2>
+                
+                <div class="about-text">
+                    <p>Soy <strong>Joshua Quintero</strong>, de Colombia. Estudio simultáneamente en <strong>RIWI</strong> e <strong>Ingeniería de Sistemas</strong> en la Universidad de la Costa (CUC).</p>
+                    <p>Me especializo en crear experiencias frontend donde cada píxel tiene intención y cada función tiene propósito. No me conformo con lo convencional — busco soluciones que sorprendan.</p>
+                    <p>Cuando no estoy construyendo interfaces o depurando código, estoy pensando en sistemas y en cómo hacer que lo complejo se sienta simple.</p>
+                </div>
+                <div class="about-divider"></div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section id="contact">
+            <div>
+                <span class="s-num">03 —</span>
+                <h2 class="contact-title">CONTACT<br><span>ME</span></h2>
+                <p class="contact-sub">¿Tienes un proyecto, una idea, o simplemente quieres conectar? No dudes en escribirme.</p>
+                <div>
+                <div class="info-row">
+                    <span class="info-label">E-mail</span>
+                    <a href="mailto:joshua.quintero@outlook.com" class="info-value">joshua.quintero@outlook.com</a>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">GitHub</span>
+                    <a href="https://github.com/JoshuaQ-rJ" target="_blank" class="info-value">github.com/JoshuaQ-rJ</a>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Ubicación</span>
+                    <span class="info-value" style="color:var(--gray)">Colombia</span>
+                </div>
+                </div>
+                <div class="soc-links">
+                <a href="mailto:joshua.quintero@outlook.com" class="soc-link">Email</a>
+                <a href="https://github.com/JoshuaQ-rJ" target="_blank" class="soc-link">GitHub</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="form-title">CONTACT FORM</h3>
+                <div class="form-group"><input type="text" id="fname" placeholder="Your name"></div>
+                <div class="form-group"><input type="text" id="fphone" placeholder="Your phone"></div>
+                <div class="form-group"><input type="email" id="femail" placeholder="Your email"></div>
+                <div class="form-group"><textarea id="fmsg" placeholder="Message"></textarea></div>
+                <button class="btn-send" onclick="sendForm()">Send Message</button>
+                <p class="form-msg" id="formMsg"></p>
+            </div>
+        </section>
+        <section></section>
+    </main>
+</body>
+</html>
