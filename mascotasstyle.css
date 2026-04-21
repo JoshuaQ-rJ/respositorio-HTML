@@ -36,63 +36,33 @@ body {
     padding: 2rem;
 }
 
-.tarjeta_1 {
-    background-color: #2d2c2cd5;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;  
+.tarjeta_1 { 
     grid-row: 2/3;
     grid-column: 1/2;
 }
 .tarjeta_2 {
-    background-color: #2d2c2cd5;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;  
     grid-row: 2/3;
     grid-column: 2/3;
 }
 .tarjeta_3 {
-    background-color: #2d2c2cd5;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;  
-    grid-row: 2/3;
+        grid-row: 2/3;
     grid-column: 3/4;
 }
-.tarjeta_4 {
-    background-color: #2d2c2cd5;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;  
+.tarjeta_4 {    
     grid-row: 3/4;
     grid-column: 1/2;
 }
 .tarjeta_5 {
-    background-color: #2d2c2cd5;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;  
+    
     grid-row: 3/4;
     grid-column: 2/3;
 }
 
-.tarjeta_6 {
+.tarjeta_6 {    
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+#tarjeta{
     background-color: #2d2c2cd5;
     width: 100%;
     padding: 2rem;
@@ -100,8 +70,6 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s ease;  
-    grid-row: 3/4;
-    grid-column: 3/4;
 }
 
 #tarjeta:hover {
@@ -153,4 +121,43 @@ h2 {
 }
 .btn-contacto:active {
     background-color: #0056b3;
+}
+@media (max-width:1200px){
+    .contenedor-principal{
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px repeat(6, 1fr);
+    }
+    .contenedor_title{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 0;
+        padding: 1rem;
+    }
+    #tarjeta{
+        grid-column: 1/2;
+    }
+    .tarjeta_1 { 
+    grid-row: 2/3;}
+
+    .tarjeta_2 {
+        grid-row: 3/4;
+        
+    }
+    .tarjeta_3 {
+        grid-row: 4/5;
+
+    }
+    .tarjeta_4 {    
+        grid-row: 5/6;
+        
+    }
+    .tarjeta_5 {
+        
+        grid-row: 6/7;
+        
+    }
+
+    .tarjeta_6 {    
+        grid-row: 7/8;
+        }
 }
