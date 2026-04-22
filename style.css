@@ -39,6 +39,12 @@ main {
     flex: 1 1 0%;
     padding: 10px;
 }
+.icono_menu {
+    height: 50px;
+    width: 50px;
+    color: var(--titulos_principales);
+    display: none;
+}
 .menu_header {
     display: flex;
     flex-direction: row;
@@ -60,7 +66,7 @@ main {
     align-items: center;
     z-index: 1000;
     justify-content: space-between;
-    background-color: var(--fondos);
+    background-color: #0a0a0af2;
     padding: 10px;
     border-radius: 20px;
 }
@@ -129,6 +135,7 @@ h1 {
     gap: 1rem;
 }
 .btn-white {
+    color: var(--cards_selecciones);
     font-family: monospace;
     font-size: 0.72rem;
     letter-spacing: 0.15em;
@@ -136,12 +143,13 @@ h1 {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     border-width: initial;
     border-style: none;
     border-color: initial;
     border-image: initial;
     transition: 0.2s;
+    text-decoration: none;
 }
 .btn-white:hover{
     background:var(--cards_selecciones);
@@ -155,10 +163,11 @@ h1 {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     background: transparent;
     border: 3px solid var(--bordes_hover);
     transition: 0.2s;
+    text-decoration: none;
 }
 .btn-ghost:hover{
     border-color: var(--subtitulos);
@@ -477,4 +486,34 @@ h1 {
         padding: 6rem 1.5rem;
     }
 
+}
+@media (max-width:550px){
+
+    .menu_header{
+        opacity: 0;
+        border-radius: 20px;
+        background-color: #111111df;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 110%;
+        right: 0;
+        width: 100%;
+        pointer-events: all;
+    }
+    .active{
+        opacity: 1;
+
+    }
+    #btn_menu_ic{
+        display: flex;
+        pointer-events: all;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    #btn_menu_ic:hover{
+        color: var(--textos_de_menorimport);
+    }
+    
 }

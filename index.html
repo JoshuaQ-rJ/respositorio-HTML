@@ -9,6 +9,11 @@
 <body class="body">
     <header class="head">
         <h2 class="icono_header">JQ</h2>
+        <div  id="btn_menu_ic" class="icono_menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        </div>        
         <nav >            
             <Ul class="menu_header">                
                 <li><a href="#portafolio">Proyectos</a></li>
@@ -27,8 +32,8 @@
             </h1>        
             <h3 class="main_desc">construyo interfaces donde el codigo y el diseño se unen. Dos carreras, una vision</h3>
             <div class="main_btns">
-                <button href="#portafolio" class="btn-white">mira mis proyectos</button>
-                <button href="#contact" class="btn-ghost">contactame</button>
+                <a href="#portafolio" class="btn-white">mira mis proyectos</a>
+                <a href="#contact" class="btn-ghost">contactame</a>
             </div>
         </section>
         <div class="divider"></div>
@@ -111,17 +116,19 @@
                 <a href="https://github.com/JoshuaQ-rJ" target="_blank" class="soc-link">GitHub</a>
                 </div>
             </div>
-            <div>
+            <form>
                 <h3 class="form-title">CONTACT FORM</h3>
                 <div class="form-group"><input type="text" id="fname" placeholder="Your name"></div>
                 <div class="form-group"><input type="text" id="fphone" placeholder="Your phone"></div>
                 <div class="form-group"><input type="email" id="femail" placeholder="Your email"></div>
                 <div class="form-group"><textarea id="fmsg" placeholder="Message"></textarea></div>
-                <button class="btn-send" onclick="sendForm()">Send Message</button>
+                <button class="btn-send" >Send Message</button>
                 <p class="form-msg" id="formMsg"></p>
-            </div>
+            </form>
         </section>
-        <section></section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
     </main>
 </body>
 </html>
